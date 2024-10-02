@@ -1,0 +1,97 @@
+/* General Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.projects > h2,
+.work-experience > h2,
+.education > h2 {
+  text-align: center;
+}
+
+.projects,
+.work-experience,
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  background-color: red;
+}
+
+.projects > .project-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects > .project-link > a {
+  text-align: center;
+}
+
+.work-experience {
+  background-color: blue;
+}
+
+.education {
+  background-color: green;
+}
+
+.reviews-wrapper > article {
+  background-color: red;
+  border-radius: 20px;
+}
+
+/* Media Query for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex-wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .projects {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .projects > .project-link > a {
+    text-align: start;
+  }
+
+  .work-experience {
+    grid-area: 1 / 4 / 2 / 8;
+  }
+
+  .education {
+    grid-area: 1 / 8 / 2 / 11;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .reviews-wrapper > article {
+    width: 20%;
+  }
+}
