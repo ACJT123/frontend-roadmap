@@ -1,0 +1,47 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.calendar-component {
+  max-width: 200px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.calendar {
+  border: 1px solid black;
+}
+
+.calendar .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.calendar .prev,
+.calendar .next {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar table td {
+  border: 1px solid black;
+}
