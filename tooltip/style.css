@@ -1,0 +1,18 @@
+.layout{
+  display: flex;
+  gap: 20px ;
+}
+
+.item:hover .tooltip{
+  display: block;
+}
+
+.tooltip{
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
