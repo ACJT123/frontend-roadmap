@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <form action="">
+        <div class="form-item">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form-item error">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <div class="msg">Email has already taken</div>
+        </div>
+
+        <div class="form-item">
+          <label for="password">Enter Password</label>
+
+          <div class="password-container">
+            <input type="password" id="password" name="password" />
+            <img
+              src="https://img.icons8.com/ios-glyphs/50/visible--v1.png"
+              alt="visible--v1"
+              class="visible"
+            />
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label for="confirm-password">Confirm Password</label>
+
+          <div class="password-container">
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+            />
+            <img
+              src="https://img.icons8.com/ios-glyphs/50/visible--v1.png"
+              alt="visible--v1"
+              class="visible"
+            />
+          </div>
+        </div>
+
+        <button type="submit">Update Profile</button>
+      </form>
+
+      <div>
+        <div class="progress-bar">
+          <progress
+            value="75"
+            min="0"
+            max="100"
+            style="visibility: hidden; height: 0; width: 0"
+          >
+            75%
+          </progress>
+        </div>
+
+        <h2>Profile Completeness</h2>
+
+        <div class="checkpoint-container">
+          <div class="checked">Create Account</div>
+
+          <div class="checked">Update Roadmap Progress</div>
+
+          <div class="checked">Setup Public Profile</div>
+
+          <div>Complete your first Project</div>
+
+          <div>Invite a Friend</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
