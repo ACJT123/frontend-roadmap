@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="customDropdown">
+      <div id="select" role="button" onclick="displayOption()">
+        <span id="selectText"> Select an item </span>
+        <img
+          width="15"
+          height="15"
+          src="https://img.icons8.com/windows/32/expand-arrow--v1.png"
+          alt="expand-arrow--v1"
+          id="arrow"
+        />
+      </div>
+
+      <div id="optionList">
+        <div
+          class="option"
+          role="button"
+          onclick="selectOpt(event, 'Option 1')"
+        >
+          Option 1
+        </div>
+        <div
+          class="option"
+          role="button"
+          onclick="selectOpt(event, 'Option 2')"
+        >
+          Option 2
+        </div>
+        <div
+          class="option"
+          role="button"
+          onclick="selectOpt(event, 'Option 3')"
+        >
+          Option 3
+        </div>
+        <div
+          class="option"
+          role="button"
+          onclick="selectOpt(event, 'Option 4')"
+        >
+          Option 4
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
