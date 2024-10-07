@@ -1,0 +1,26 @@
+p,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  border-bottom: 1px solid #000;
+  width: fit-content;
+}
+
+.task-item > p{
+  width: 300px;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.delete-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
