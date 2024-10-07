@@ -1,0 +1,21 @@
+p,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+#result {
+  background-color: #e9ecef;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#result.error {
+  /* red background with 0.5 opacity */
+  background-color: #ffc9c9;
+}
