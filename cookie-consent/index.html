@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h1>Cookie Consent</h1>
+
+      <p>
+        This is a simple cookie consent banner that you can add to your website.
+        It uses HTML, CSS, and JavaScript.
+      </p>
+    </div>
+
+    <div id="overlay"></div>
+    
+    <div id="cookieConsent">
+      <img
+        width="48"
+        height="48"
+        src="https://img.icons8.com/fluency/48/cookie.png"
+        alt="cookie"
+      />
+
+      <img
+        width="20"
+        height="20"
+        src="https://img.icons8.com/fluency/48/delete-sign.png"
+        alt="delete-sign"
+        class="close"
+        role="button"
+        onclick="closeCookieConsent()"
+      />
+
+      <p>We use cookies to improve your user experience</p>
+
+      <button class="accept-btn" onclick="acceptCookie()">
+        I like cookies
+      </button>
+    </div>
+  </body>
+</html>
